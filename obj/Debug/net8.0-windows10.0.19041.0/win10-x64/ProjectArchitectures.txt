@@ -1,0 +1,1 @@
+C:\My projects\TextAppMaui\TextAppMaui.csproj;x64

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TextAppMaui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TextAppMaui"
+    xmlns:views="clr-namespace:TextAppMaui.Views"
+    BackgroundColor="#535f73"
+    Shell.TabBarIsVisible="False"
+    FlyoutBehavior="Flyout"
+    Title="TextAppMaui">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent x:Name="test" Title="All Notes" Shell.TitleColor="White" ContentTemplate="{DataTemplate views:TestPage}" Route="TestPage"/>
+        <ShellContent x:Name="favorites" Title="Favorites" Shell.TitleColor="White" ContentTemplate="{DataTemplate views:Favorites}" Route="Favorites"/>
+    </FlyoutItem>
+    
+</Shell>
